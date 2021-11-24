@@ -75,7 +75,15 @@ int P_move(char* MAP){
             *(MAP + y*mapWidth*sizeof(char) + x*sizeof(char))= '.';
             setMot(tmp,getMot(tmp)-1);
             if(getMot(tmp)< 0){
+                setMot(tmp,getMot(tmp)+1);
                 setHP(getStates(0),getHP(getStates(0))-1);
+                if(getHP(getStates(0)) <= 0){
+                    flag = 2;
+                    attrset(COLOR_PAIR(7));
+                    mvprintw(12,0,"Mot ganbro");
+                    attrset(COLOR_PAIR(2));
+                    P_FLAG = getch();
+                }
                 break;
             }
         }
