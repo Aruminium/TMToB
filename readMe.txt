@@ -1,12 +1,26 @@
 git clone　していただき誠にありがとうございます。
 
 +---<COMPILE and RUN>---------------------------------------------------+
-あくまで一例ですので気をつけてください。
 windowsのかたはwsl環境下で実行してください
+私の動作確認環境はmac(Big Sur)とWindows10(Wsl)です。
+またgcc系のコンパイラをつかっているのでほかのコンパイラではコンパイルできるかどうかわかりません。ご了承くださいませ。
 
+あくまで一例です
+(For mac)
 gcc -o game main.c battle.c view.c map.c move.c states.c -lncurses
 ./game
 
+(For windows10)
+1.(wsl上でgccが使える方は次へ)wslを起動したら 
+  sudo apt install gcc
+※もしエラーが発生した場合は sudo apt-get update　とコマンドを打った後、1.を試してください
+
+2.(ncursesを導入されているかたは次へ)
+  sudo apt-get install libncurses5-dev と打ちその後に
+  sudo apt-get install ncurses-doc 
+ 
+3. gcc -o game main.c battle.c view.c map.c move.c states.c -lncurses
+  ./game
 
 +---<FEATURES>------------------------------+
 1.roguelike
