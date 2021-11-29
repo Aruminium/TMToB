@@ -31,7 +31,7 @@ int battle(state* a,state* b){
             mvprintw(3,0,"You : Rock");
             hand = 0;
         }
-        else if(Player_hand==1){
+        else if(Player_hand=='p'){
             mvprintw(3,0,"You : Paper");
             hand = 1;
         }
