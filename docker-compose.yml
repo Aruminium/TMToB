@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+ cdev:
+  build:
+   context: .
+   dockerfile: Dockerfile
+  image: cdev
+  container_name: cdev
+  volumes:
+   - type: bind
+     source: .
+     target: /cdev
+  stdin_open: true
+  tty: true
+  working_dir: /cdev/src/
