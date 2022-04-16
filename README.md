@@ -9,6 +9,8 @@
 7. make
 8. ./game
 
+⚠️docker for ...が起動している状態であることを確認してください
+
 ## FEATURES
 
 1. roguelike
