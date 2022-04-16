@@ -3,8 +3,8 @@
 1. https://www.docker.com/pricing/ からDocker for (windos or mac)をダウンロード
 2. 任意のディレクトリで git cloneする
 3. cd TMToB
-4. docker-compose docker-compose build
-5. docker-compose up -d
+4. docker-compose build (docker compose build)
+5. docker-compose up -d (docker compose up -d)
 6. docker exec-it cdev bash
 7. make
 8. ./game
