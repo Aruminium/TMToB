@@ -10,6 +10,14 @@
 8. ``` ./game ```
 
 ⚠️docker for ... が起動状態であることを確認してください
+### 遊び終わったら
+``` 
+exit ([root@... src]状態から抜けます)
+docker-compose down(docker compose down) 
+```
+
+### 再び遊ぶ時は
+上記のCOMPILE and RUNより、5番目以降(docker-compose up -d (docker compose up -d))をそれぞれ実行
 
 ## FEATURES
 
