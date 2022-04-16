@@ -1,7 +1,7 @@
 ## COMPILE and RUN
 
 1. https://www.docker.com/pricing/ からDocker for (windos or mac)をダウンロード
-2. 任意のディレクトリで git cloneする
+2. 任意のディレクトリ上で git cloneする
 3. cd TMToB
 4. docker-compose build (docker compose build)
 5. docker-compose up -d (docker compose up -d)
